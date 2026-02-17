@@ -1,0 +1,6 @@
+.gradio/
+*.mp3
+.env
+__pycache__/
+venv/
+.venv/
