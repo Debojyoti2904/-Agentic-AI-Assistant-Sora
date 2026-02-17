@@ -23,7 +23,7 @@
 
 ## 🎥 Project Demo
 
-![Sora in Action](https://github.com/user-attachments/assets/ca0f894e-4c29-4be7-9d52-a51af5130792)
+[Sora in Action](https://github.com/user-attachments/assets/ca0f894e-4c29-4be7-9d52-a51af5130792)
 
 > *Sora identifying objects in real-time and engaging in a natural voice conversation.*
 ---
@@ -50,12 +50,10 @@ Built for the 2026 AI landscape, Sora isn't just a chatbot; it is a **ReAct Agen
 
 Sora operates on a modular pipeline where specialized models handle specific sensory inputs, all coordinated by the central Gemini "Brain." 
 
-
-
 ```mermaid
 graph TD
     User((User)) -->|Voice Input| STT["Whisper Large V3<br>(via Groq)"]
-    STT -->|Transcribed Text| Agent{LangGraph ReAct Agent<br>(Gemini 2.0 Flash)}
+    STT -->|Transcribed Text| Agent{"LangGraph ReAct Agent<br>(Gemini 2.0 Flash)"}
     
     Agent -- "Requires Visuals?" --> Decision{Decision Node}
     
@@ -66,9 +64,8 @@ graph TD
     
     Decision -- No --> Agent
     
-    Agent -->|Final Text Response| TTS[ElevenLabs / gTTS]
+    Agent -->|Final Text Response| TTS["ElevenLabs / gTTS"]
     TTS -->|Audio Output| User
-
 ```
 
 ---
