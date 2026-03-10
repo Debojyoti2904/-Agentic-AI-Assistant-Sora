@@ -88,7 +88,7 @@ graph TD
 ### 1. Clone & Environment
 
 ```bash
-git clone [https://github.com/Debojyoti2904/-Agentic-AI-Assistant-Sora.git](https://github.com/Debojyoti2904/-Agentic-AI-Assistant-Sora.git)
+git clone <repository-url>
 cd Sora-Agentic-Assistant
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
